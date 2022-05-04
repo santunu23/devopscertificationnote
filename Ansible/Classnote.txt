@@ -1,0 +1,9 @@
+Mobaxterm:Helps you to connect with you machines.
+Ansible video link: https://vimeo.com/684272256
+YML= Yet another Mark up language.
+Ansible uses OpenSSH and WinRM as transport to achieve automation.
+Ansible uses SSH to execute these modules and then removes 
+them when finished.
+Ansible uses 'Playbooks' to implement the chages desired by the users.
+Playbooks contain plays,plays have taks and tasks call moduels
+Modules are the units which execute on the servers.
