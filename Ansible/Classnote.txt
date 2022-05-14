@@ -7,3 +7,53 @@ them when finished.
 Ansible uses 'Playbooks' to implement the chages desired by the users.
 Playbooks contain plays,plays have taks and tasks call moduels
 Modules are the units which execute on the servers.
+Ansible uses the inventory file to represent all the machines it is managing.
+Users can then group the machines to their own liking.
+Plugins act as extension to Ansible.
+Action Plugin lets you perform tasks on your Ansible machine
+before execute a playbook.
+The hosts are connected to the Anible system via secure SSH connection.
+Different networks can be managed together giving each network separate access rights.
+Centralizing Configuration Management with Ansible users can automate and bring 
+	the servers to the desired state with a single automation script.
+Ansible allows users to automate their environment using two different ways
+Ad-Hoc commands 
+Playbooks
+Ansible ad-hoc commands are used to accomplish tasks quickly.
+It uses the ansible command line tool to execute tasks.
+Any Ansible module can be used to run as ad-hoc task.
+Why use Ad-Hoc Commands
+* Used to execute one off tasks.
+* Quick and easy to execute. 
+* Non-reusable.
+Ad-Hoc Command Syntax 
+ansible [pattern] –m [module] –a “[module options]” [*module options will be Key Value pair]
+
+example
+ansible frontend –m service –a “name=nginx state=restarted”
+
+Playbook
+Playbooks are the access point to Ansible provisioning.
+It is the Ansible’s way of deploying and configuring different remote
+Servers and environments.
+It is written in YAML.
+On an advance level playbooks can be used to 
+o Handle multi-tier rollouts.
+o Load balancing tasks for the servers.
+What is playbook
+	Playbooks are the access point to ansible provisioning. 
+	It is the Ansible way of deploying and configuring different remote servers and environments.
+	It is written in YAML(Yet another mark up language)
+	On an advance level playbooks can be used to 
+		Handle multi-tier rollouts.
+		Load balancing tasks for the servers.
+
+
+
+
+
+
+
+
+3) 
+
